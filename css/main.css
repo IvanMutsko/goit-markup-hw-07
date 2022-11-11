@@ -224,7 +224,7 @@ button {
   padding-bottom: 200px;
   text-align: center;
 }
-.hero .title {
+.hero__title {
   display: flex;
   font-weight: 900;
   font-size: 44px;
@@ -237,8 +237,7 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
-
-.hero-btn {
+.hero__btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -251,35 +250,24 @@ button {
   border-color: transparent;
   transition: background-color var(--hover-duration) var(--timing-function);
 }
-.hero-btn:hover, .hero-btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: var(--accent-active);
 }
 
 .benefits {
   padding-bottom: 0;
 }
-.benefits .title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-text);
-  margin-bottom: 10px;
-}
-
-.benefits-list {
+.benefits__list {
   list-style-type: none;
   display: flex;
 }
-.benefits-list .item {
+.benefits__item {
   width: 270px;
 }
-.benefits-list .item:nth-child(-n+3) {
+.benefits__item:nth-child(-n+3) {
   margin-right: 30px;
 }
-
-.benefits-list-fone {
+.benefits__icon-wrap {
   display: inline-flex;
   content: "";
   height: 120px;
@@ -290,19 +278,26 @@ button {
   justify-content: center;
   align-items: center;
 }
-
-.benefits-icon {
+.benefits__icon {
   width: 70px;
   height: 70px;
 }
-
-.benefits-text {
+.benefits__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text);
+  margin-bottom: 10px;
+}
+.benefits__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.work .title {
+.work__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -311,17 +306,15 @@ button {
   color: var(--main-text);
   margin-bottom: 50px;
 }
-
-.work-list {
+.work__list {
   list-style-type: none;
   display: flex;
   gap: 30px;
 }
-.work-list .item {
+.work__item {
   position: relative;
 }
-
-.work-list-subskribe {
+.work__subtitle {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -341,7 +334,7 @@ button {
 .command {
   background-color: var(--grey-background);
 }
-.command .title {
+.command__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -350,24 +343,23 @@ button {
   color: var(--main-text);
   margin-bottom: 50px;
 }
-
-.command-list {
+.command__list {
   list-style-type: none;
   display: flex;
 }
-.command-list .wrap {
+.command__caption-wrap {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.command-list .item {
+.command__item {
   background-color: var(--white-background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.command-list .item:not(:last-child) {
+.command__item:not(:last-child) {
   margin-right: 30px;
 }
-.command-list .title {
+.command__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -376,7 +368,7 @@ button {
   color: var(--main-text);
   margin-bottom: 10px;
 }
-.command-list .text {
+.command__text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -384,15 +376,14 @@ button {
   margin-bottom: 16px;
 }
 
-.comand-socials {
+.socials {
   display: flex;
   text-align: center;
   list-style: none;
   justify-content: center;
   gap: 10px;
 }
-
-.comand-socials-link {
+.socials__link {
   color: inherit;
   display: inline-flex;
   width: 40px;
@@ -403,11 +394,8 @@ button {
   justify-content: center;
   transition: fill var(--hover-duration) var(--timing-function), background-color var(--hover-duration) var(--timing-function);
 }
-.comand-socials-link:not(:last-child) {
-  margin-right: 10px;
-}
 
-.clients .title {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -422,8 +410,7 @@ button {
   list-style: none;
   gap: 30px;
 }
-
-.company-list-item .link {
+.company-list__link {
   display: flex;
   fill: var(--icon-color);
   width: 170px;
@@ -434,7 +421,7 @@ button {
   border-radius: 4px;
   transition: fill var(--hover-duration) var(--timing-function), border-color var(--hover-duration) var(--timing-function);
 }
-.company-list-item .link:hover, .company-list-item .link:focus {
+.company-list__link:hover, .company-list__link:focus {
   border-color: var(--accent-active);
   fill: var(--accent-active);
 }

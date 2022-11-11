@@ -1,5 +1,5 @@
 .work {
-  .title {
+  &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -9,32 +9,33 @@
     color: var(--main-text);
     margin-bottom: 50px;
   }
-}
-.work-list {
-  list-style-type: none;
-  display: flex;
-  gap: 30px;
-  .item {
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
     position: relative;
   }
-}
 
-.work-list-subskribe {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  &__subtitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
-  padding-top: 27px;
-  padding-bottom: 27px;
-  width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
 
-  color: var(--white-text);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+    color: var(--white-text);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-  background-color: rgba(47, 48, 58, 0.8);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }

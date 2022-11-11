@@ -1,5 +1,5 @@
 .clients {
-  .title {
+  &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -15,10 +15,8 @@
   display: flex;
   list-style: none;
   gap: 30px;
-}
 
-.company-list-item {
-  .link {
+  &__link {
     display: flex;
     fill: var(--icon-color);
     width: 170px;
